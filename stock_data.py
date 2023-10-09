@@ -2,11 +2,11 @@ import requests
 from decouple import config
 
 class StockData:
-    def __init__(self, stock: str = "MSFT"):
+    def __init__(self, stock_ticker: str = "MSFT"):
         
         self.alpha_vantage_api_endpoint = "https://www.alphavantage.co/query"
         self.alpha_vantage_api_key = config("ALPHA_VANTAGE_API_KEY")
-        self.stock = stock
+        self.stock = stock_ticker
         self.parameters = {
             "function": "TIME_SERIES_DAILY",
             "symbol": self.stock,
