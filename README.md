@@ -1,2 +1,11 @@
-# stock_news_app
+# Project Overview
 Stock News Alert App
+
+
+# Objectives
+
+
+# Results
+
+
+# Process
