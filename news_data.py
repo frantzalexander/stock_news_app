@@ -4,7 +4,7 @@ from decouple import config
 
 class NewsData:
     def __init__(self, company_name: str = "microsoft"):
-        self.company_name = company_name
+        self.company_name = company_name.lower()
         self.news_api_endpoint = "https://newsapi.org/v2/everything"
 
         self.parameters = {
